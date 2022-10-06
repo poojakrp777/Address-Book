@@ -135,5 +135,21 @@ namespace Address_Book
 
         }
 
+        public void DeleteContact()
+        {
+            Console.WriteLine("Please enter name of Person to Delete");
+            string Firstname = Console.ReadLine();
+
+            foreach (Contacts contact in add)
+            {
+                if (contact.First_Name.ToLower() == Firstname.ToLower())
+                {
+                    add.Remove(contact);
+                    Console.WriteLine("Entered First name is Deleted from the List");
+                    return;
+                }
+            }
+            Console.WriteLine("Contact Not found");
+        }
     }
 }
