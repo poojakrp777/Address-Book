@@ -10,7 +10,9 @@ namespace Address_Book
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to my Address Book");
+            Console.WriteLine("Welcome to Address Book Program");
+            AddressBookClass createcontact = new AddressBookClass();
+            createcontact.CreateContact();
         }
     }
 }
