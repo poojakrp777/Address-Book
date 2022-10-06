@@ -151,5 +151,16 @@ namespace Address_Book
             }
             Console.WriteLine("Contact Not found");
         }
+        public void AddMultipleContact()
+        {
+            Console.WriteLine("Enter Number of contacts to add");
+            int Number = Convert.ToInt32(Console.ReadLine());
+            while (Number > 0)
+            {
+                addPerson();
+                Console.WriteLine("::::::::::::::::::::::;");
+                Number--;
+            }
+        }
     }
 }
